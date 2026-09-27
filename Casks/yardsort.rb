@@ -1,8 +1,8 @@
 # Generated from packaging/homebrew/yardsort.rb.in in https://github.com/joaoh82/yardsort by the
 # release workflow. Please send changes there rather than editing this copy.
 cask "yardsort" do
-  version "0.10.0"
-  sha256 "4af2aa559b34aec68d3ae1868d19979987dc64bb6c6d115e8e7665d5b281a3fb"
+  version "0.11.0"
+  sha256 "c86dfce2f6bed14c24da7ba6939f0d53612768e508129a282f5444a09d71097c"
 
   url "https://github.com/joaoh82/yardsort/releases/download/v#{version}/Yardsort_#{version}_universal.dmg"
   name "Yardsort"
@@ -19,6 +19,8 @@ cask "yardsort" do
   depends_on macos: :catalina
 
   app "Yardsort.app"
+  # The command-line client ships inside the app, signed with it; Homebrew links it onto PATH.
+  binary "#{appdir}/Yardsort.app/Contents/MacOS/ys"
 
   zap trash: [
     "~/Library/Application Support/dev.yardsort.app",
