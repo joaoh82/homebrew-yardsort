@@ -1,8 +1,8 @@
 # Generated from packaging/homebrew/yardsort.rb.in in https://github.com/joaoh82/yardsort by the
 # release workflow. Please send changes there rather than editing this copy.
 cask "yardsort" do
-  version "0.27.0"
-  sha256 "44c5bea08e22b2a4c6221ed54de24807dfe7b8ecdcc0b5be223bb275d09cc41b"
+  version "0.28.0"
+  sha256 "d0af69c78c56d4158f7a3cbc18cf0215de3271a5a546c12a4341e89987873ecc"
 
   url "https://github.com/joaoh82/yardsort/releases/download/v#{version}/Yardsort_#{version}_universal.dmg"
   name "Yardsort"
